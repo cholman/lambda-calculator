@@ -1,5 +1,11 @@
 import React from "react";
+import { tsPropertySignature } from "@babel/types";
 
-const Display = () => {
-  return <div className="display">{/* Display any props data here */}</div>;
+const Display = (props) => {
+  return <div className="display">
+            {/* Display any props data here */}
+            {props.displayValue}
+          </div>;
 };
+
+export default Display;
